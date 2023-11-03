@@ -17,14 +17,13 @@ export const Navbar = () => {
           alt="logo"
           className="logo-icon"
         />
-        <div className="logo-name">Happay</div>
+        <div className="logo-name">E-commerce</div>
       </Link>
       <ul className="centered nav-links">
        {location.pathname === "/" && ( <Link  to="/order-summary" className="cart-wrapper pointer">
         <Cart />
         <div className="qty-badge">{cart.length}</div>
         </Link>)}
-        <li><img src="https://images.unsplash.com/photo-1521227889351-bf6f5b2e4e37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YnJvd24lMjB3b21hbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="" className="profile-img" /></li>
       </ul>
     </nav>
   );
